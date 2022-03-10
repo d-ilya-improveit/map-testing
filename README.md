@@ -1,5 +1,10 @@
 # Test task
 
+## Info
+
+- Done: map that includes around 10 brands, located in Europe. Move or zoom map to see them (you can zoom to the size of Earth). These brands will appear in side-list. By clicking on list or marker the modal will appear.
+- Skipped: brands don't have logos, as it requires additional services for storing files. The design is not responsive, works only on large screens.
+
 ## To launch project do following:
 
 1. Dowload repository or pull it locally
