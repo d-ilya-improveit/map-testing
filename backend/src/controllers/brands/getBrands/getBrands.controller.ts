@@ -2,7 +2,7 @@ import { RequestHandler } from "express";
 import { BrandModel } from "../../../db";
 import ResponseService from "../../../utils/ResponseService";
 
-const createBrandController: RequestHandler = async (req, res) => {
+const createBrandController: RequestHandler = async (req, res, next) => {
   try {
     const latMax = Math.max(
       Number(req.query.latStart),
@@ -28,7 +28,7 @@ const createBrandController: RequestHandler = async (req, res) => {
 
     ResponseService.success(res, brands);
   } catch (err: any) {
-    ResponseService.error(res, 400, err.message);
+    next(err);
   }
 };
 

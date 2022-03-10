@@ -1,4 +1,6 @@
-const BASE_URL = "/api/v1/";
+import CONFIG from ".";
+
+const { BASE_URL } = CONFIG;
 
 const API_ROUTES = {
   BRANDS: {

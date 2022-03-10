@@ -6,7 +6,7 @@ class ResponseService {
   }
 
   static error(res: Response, errorCode?: number, errorMsg?: string) {
-    res.status(errorCode ?? 500).send(errorMsg ?? "");
+    res.status(errorCode ?? 500).send(errorMsg ?? "Oops, something went wrong");
   }
 }
 

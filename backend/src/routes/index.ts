@@ -1,6 +1,6 @@
 import { Express } from "express";
-import testRoute from "./brands.route";
+import brandsRoute from "./brands.route";
 
 export default (app: Express) => {
-  app.use(testRoute());
+  app.use(brandsRoute());
 };

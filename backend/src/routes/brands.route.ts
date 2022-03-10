@@ -13,7 +13,7 @@ import {
   validateQuery,
 } from "../middleware/validation.middleware";
 
-const testRoute = () => {
+const brandsRoute = () => {
   const route = Router();
 
   route.post(
@@ -31,4 +31,4 @@ const testRoute = () => {
   return route;
 };
 
-export default testRoute;
+export default brandsRoute;
